@@ -19,6 +19,8 @@ export class CursosComponent implements OnInit{
     this.cursos = this.cursosService.getCursos(); //puxa os dados que está no getCursos que estáa na service
 
     this.cursosService.emitirCursoCriado.subscribe( curso => console.log(curso));
+
+    //CursosService.criouNovoCurso.subscribe(curso => console.log(curso));
   }
 
 }
